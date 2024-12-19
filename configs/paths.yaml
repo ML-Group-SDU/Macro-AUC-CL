@@ -1,0 +1,5 @@
+save_dir: /datas/
+dataset_dir: /datas/Datasets/
+coco_dir: /datas/Datasets/coco2017/
+voc_dir: /datas/Datasets/VOC/
+nus_dir: /datas/Datasets/NUS-WIDE/
