@@ -18,6 +18,6 @@ Before running codes, please download the following multi-label datasets to your
 [NUS-WIDE](https://lms.comp.nus.edu.sg/research/NUS-WIDE.html)
 
 # Training instructions
-Run the files in the directory '''run_commands''', for example: `python run_commands/rm_replay_based/voc/rm.py`.
+Run the files in the directory '''run_commands''', for example: `python run_commands/rm_replay_based/voc/rm_voc.py`.
 The runing fils in this directory serves like bash files, they call the training python files in directory `train/`.
 The results will be saved in directory `logs/`.
