@@ -16,8 +16,7 @@ from avalanche.evaluation.multilabel_metrics.multi_label_forgetting_bwt import f
 from avalanche.logging import InteractiveLogger, CSVLogger, TextLogger
 from avalanche.training.supervised.strategy_wrappers_multi_label import MultiLabelNaive
 from avalanche.training.plugins import EvaluationPlugin, LRSchedulerPlugin, MultiLabelReplayPlugin
-from examples.utils.utils import fix_seeds
-from examples.utils.utils import set_gpu_device
+from tools.utils import fix_seeds,set_gpu_device
 
 from tools.SAM.solver.build import build_optimizer
 from tools.myargs import get_args

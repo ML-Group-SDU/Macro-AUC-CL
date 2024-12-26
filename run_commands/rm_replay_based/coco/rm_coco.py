@@ -1,22 +1,13 @@
-from run_commands.multi_label.usage import run_ml_cl_tasks_from_single_dataset
+import sys
+import os
+sys.path.insert(0, f"{os.environ['HOME']}/codes/MACRO-AUC-CL/")
 
-voc_setup = {
-    'dataset': 'voc',
-    'task_num': 5,
-    'cuda': '2'
-}
-coco_setup = {
-    'dataset': 'coco',
-    'task_num': 8,
-}
-nus_setup = {
-    'dataset': 'nus-wide',
-    'task_num': 9,
-}
+import run_commands.multi_label.usage as usa
+from run_commands.dataset_setup import *
 setup = coco_setup
 
 if __name__ == '__main__':
-    run_ml_cl_tasks_from_single_dataset(
+    usa.run_ml_cl_tasks_from_single_dataset(
         dataset_name=setup["dataset"],
         task_num=setup["task_num"],
         des="scale_loss",
@@ -34,5 +25,5 @@ if __name__ == '__main__':
         mem_sizes=[2000],
         lambdas=[3.5],
         num_workers=2,
-        scale_ratio_list=[1.0, 0.8, 0.6]
+        scale_ratio_list=[0.8]
     )

@@ -13,6 +13,7 @@ def select_model(model_name,total_class_num):
         raise ValueError("model selection error!")
     return model
 
+
 def get_benchmark(args):
     if args.imbalance == "yes":
         scenario,total_class_num = cl_ml_imbalance_benchmark_from_single_dataset(dataset_name=args.dataset_name,

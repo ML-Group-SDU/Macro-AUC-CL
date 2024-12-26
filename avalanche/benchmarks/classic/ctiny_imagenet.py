@@ -9,7 +9,7 @@
 # Website: continualai.org                                                     #
 ################################################################################
 from pathlib import Path
-from typing import Union,Optional
+from typing import Union, Optional, Any
 
 from avalanche.benchmarks.classic.classic_benchmarks_utils import (
     check_vision_benchmark,

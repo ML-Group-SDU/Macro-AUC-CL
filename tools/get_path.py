@@ -21,8 +21,9 @@ def get_log_path():
     return os.path.expanduser("~") + config["save_dir"] + project_name + "/logs/"
 
 
-def get_python_exec_path(py_exec_file):
-    return os.path.expanduser("~") + py_exec_file
+def get_python_exec_path():
+    config = read_yaml('paths.yaml')
+    return os.path.expanduser("~") + config['python_path'] + " "
 
 if __name__ == '__main__':
     print(get_log_path())
